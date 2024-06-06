@@ -1,4 +1,4 @@
-namex = 'Bold User';
-nameY = 'Smart User';
+namex = 'Bold User'
+nameY = 'Smart User'
 
-print(f"(namex) is stronger than (nameY)")
+print(f"{namex} is stronger than {nameY}")
