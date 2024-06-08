@@ -1,0 +1,26 @@
+{
+  "name": "learn-git",
+  "version": "1.0.0",
+  "description": "![git-github](https://github.com/Emm-aan1/learn-git/assets/114946207/d4c8e548-3aa1-407c-9656-cb4ef8990867)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emm-aan1/learn-git.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emm-aan1/learn-git/issues"
+  },
+  "homepage": "https://github.com/Emm-aan1/learn-git#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
