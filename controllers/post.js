@@ -1,23 +1,22 @@
-const Post = require("../models/post")
+const Post = require("../models/post");
 
+let posts = [];
+
+// Handler for getting posts
 exports.getPost = (req, res) => {
-  res.json({
-    posts: [
-      { title: 'First post' },
-      { title: 'Second post' }
-    ]
-  })
-}
+  res.json({ posts });
+};
 
+// Handler for creating a post
 exports.createPost = (req, res) => {
-  const post = new Post(req.body)
-  // console.log("POST CREATED: ", req.body)
+  const post = {
+    title: req.body.title,
+    body: req.body.body
+  };
+  posts.push(post);
+  res.status(201).json({
+    message: 'Post created successfully',
+    data: post,
+  });
+};
 
-  post.save((err, data) => {
-    if (err) {
-      return res.status(400).json({
-        err: err
-      })
-    }
-  })
-}
